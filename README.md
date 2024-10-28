@@ -42,8 +42,8 @@ All VMs are configured to communicate within a private **Internal Network** in V
 ### Steps
 1. Set up the Internal Network in VirtualBox.
 2. Assign static IP addresses to each VM:
-   - Domain Controller: `192.168.1.10`
-   - Client machines: `192.168.1.11`, `192.168.1.12`, etc.
+   - Domain Controller: `192.168.0.69`
+   - Client machines: `192.168.0.11`, `192.168.0.12`
 
 ## Domain Controller Installation and Configuration
 
@@ -87,7 +87,7 @@ The following screenshot shows the **Active Directory Domain Services** role suc
 *Server Manager showing Active Directory Domain Services (AD DS) successfully installed and operational on the Domain Controller.*
 ## DNS Configuration
 
-The following screenshot shows the **DNS Manager** with the forward lookup zone created for `gibdoguts.local`. Configuring DNS is essential for domain name resolution in the Active Directory environment.
+The following screenshot shows the **DNS Manager** with the forward lookup zone configured for `gibdoguts.local`. This setup is essential for managing domain name resolution within the Active Directory environment.
 
 ![DNS Configuration](assets/DNSConfig.png)
 *DNS Manager with `gibdoguts.local` forward lookup zone configured on the Domain Controller.*
