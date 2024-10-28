@@ -79,8 +79,19 @@ With the environment configured, various tests ensure AD and network functionali
 
 The following screenshots demonstrate key steps in the setup process:
 
-1. **AD DS Installation** on the Domain Controller.
-2. **DNS Configuration** on the Domain Controller.
+## Domain Controller Installation and Configuration
+
+The following screenshot shows the **Active Directory Domain Services** role successfully installed on the Domain Controller.
+
+![Active Directory Domain Services Installed](assets/ADDSInstalled.png)
+*Server Manager showing Active Directory Domain Services (AD DS) successfully installed and operational on the Domain Controller.*
+## DNS Configuration
+
+The following screenshot shows the **DNS Manager** with the forward lookup zone created for `gibdoguts.local`. Configuring DNS is essential for domain name resolution in the Active Directory environment.
+
+![DNS Configuration](assets/DNSConfig.png)
+*DNS Manager with `gibdoguts.local` forward lookup zone configured on the Domain Controller.*
+
 3. **Client Domain Join** process.
 4. **Group Policy Management** in action.
 
