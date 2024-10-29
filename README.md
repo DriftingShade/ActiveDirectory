@@ -1,11 +1,11 @@
-# Active Directory Environment Setup
+# Active Directory Environmental Lab Setup
 
-This project demonstrates the setup of a virtual Active Directory (AD) environment using Oracle VM VirtualBox. This README provides a detailed process, with screenshots, for building and configuring an AD setup including a Domain Controller (DC) and client machines. This setup is valuable for IT Help Desk tasks such as user management, Group Policy configuration, and network troubleshooting.
+This project demonstrates the setup of a virtual Active Directory environment using Oracle VM VirtualBox. This README provides a detailed process, with screenshots, for building and configuring an AD setup including a Domain Controller (DC) and client machines. This setup is valuable for IT Help Desk tasks such as user management, Group Policy configuration, and network troubleshooting.
 
 ## Project Overview
 
 The goal of this project is to create a fully functional AD environment, simulating a real-world IT environment where users, groups, and policies can be managed. This setup includes:
-- A **Domain Controller (DC)** to host the Active Directory and DNS services.
+- A **Domain Controller** to host the Active Directory and DNS services.
 - **Client machines** joined to the domain, demonstrating communication and policy enforcement.
 - **Documentation** and screenshots throughout the process for learning and future reference.
 
@@ -52,7 +52,7 @@ The DC serves as the backbone of this setup, managing Active Directory and DNS.
 ### Steps
 1. Install Windows Server on the VM designated as the Domain Controller.
 2. Configure the server with a static IP and hostname.
-3. Install the **Active Directory Domain Services (AD DS)** role.
+3. Install the **Active Directory Domain Services** role.
 4. Promote the server to a Domain Controller, creating a new forest (in this case it is `gibdoguts.local`).
 5. Configure DNS to handle requests for the domain.
 
