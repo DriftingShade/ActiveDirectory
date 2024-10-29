@@ -92,8 +92,49 @@ The following screenshot shows the **DNS Manager** with the forward lookup zone 
 ![DNS Configuration](assets/DNSConfig.png)
 *DNS Manager with `gibdoguts.local` forward lookup zone configured on the Domain Controller.*
 
-3. **Client Domain Join** process.
-4. **Group Policy Management** in action.
+## Adding Client1 to the Domain
+
+The following screenshots demonstrate the process of joining **Client1** to the Active Directory domain `gibdoguts.local` and logging in with a domain user account.
+
+### Step 1: Initiate Domain Join
+
+In the **Computer Name/Domain Changes** window, we specified the domain `gibdoguts.local` for **Client1** to join.
+
+![Joining Client1 to the Domain](assets/Client1DomainJoin.png)
+*Setting up Client1 to join the gibdoguts.local domain.*
+
+### Step 2: Successful Domain Join
+
+After providing the domain credentials, we received a welcome message indicating **Client1** was successfully added to the domain.
+
+![Client1 Domain Join Success](assets/Client1Success.png)
+*Client1 successfully joined to the gibdoguts.local domain.*
+
+### Step 3: Logging in with Domain User
+
+After restarting, we logged in to **Client1** using the domain user account `johnsmith`, confirming successful authentication to the domain.
+
+![Logging in with Domain User](assets/Client1Login.png)
+*Domain user johnsmith logging in on Client1 after joining the domain.*
+
+## Group Policy: Disable Control Panel Access
+
+To demonstrate Group Policy, we created a policy to prevent users from accessing the Control Panel on domain-joined machines.
+
+### Creating and Applying the Group Policy
+
+The **Disable Control Panel Access** GPO was created in Group Policy Management to restrict user access to the Control Panel.
+
+![Group Policy Management](assets/GroupPolicyControlPanel.png)
+*Group Policy Management Console showing the Disable Control Panel Access policy.*
+
+### Result on Client1
+
+After applying the Group Policy, attempts to open the Control Panel on **Client1** are blocked.
+
+![Group Policy Result](assets/Client1ControlPanelBlocked.png)
+*Client1 showing a message that access to the Control Panel is restricted by Group Policy.*
+
 
 Each screenshot is saved in the `assets` folder for easy reference.
 
