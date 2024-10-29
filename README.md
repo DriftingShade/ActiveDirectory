@@ -84,7 +84,7 @@ The following screenshots demonstrate key steps in the setup process:
 The following screenshot shows the **Active Directory Domain Services** role successfully installed on the Domain Controller.
 
 ![Active Directory Domain Services Installed](assets/ADDSInstalled.png)
-*Server Manager showing Active Directory Domain Services (AD DS) successfully installed and operational on the Domain Controller.*
+*Server Manager showing Active Directory Domain Services successfully installed and operational on the Domain Controller.*
 ## DNS Configuration
 
 The following screenshot shows the **DNS Manager** with the forward lookup zone configured for `gibdoguts.local`. This setup is essential for managing domain name resolution within the Active Directory environment.
